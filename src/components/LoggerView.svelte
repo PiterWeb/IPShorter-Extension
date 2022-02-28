@@ -52,8 +52,8 @@
           <span class="font-bold">Visitors:</span> 
           {#if logger.Visitors}
           [{#each logger.Visitors as visitor , i} 
-          {#if visitor.Ip != null}
-          {visitor.Ip} 
+          {#if visitor.IP != null}
+          {visitor.IP} 
           {:else}
           Uknown visitor
           {/if}
