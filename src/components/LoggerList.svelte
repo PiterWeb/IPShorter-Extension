@@ -28,6 +28,7 @@
   })();
 </script>
 
+{#if $ApiKey != ""}
 {#await fetchLoggers}
   <p class="font-bold text-center my-2">
     No loggers found or still searching it
@@ -93,6 +94,8 @@
 
 {#if $LoggerReq}
   <LoggerView />
+{/if}
+
 {/if}
 
 <style>
